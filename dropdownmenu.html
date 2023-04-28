@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- jquery cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>">
+     <!-- javascript cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <!-- css cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script>
+        $(function(){
+$('.bxslider').bxSlider({
+//   mode: 'fade',
+  slideWidth:2500,
+  speed:1000,
+  randomStart:false,
+  pager:true,
+  captions:true,
+  pagerType:"short",
+  controls:false,
+  auto:true,
+});
+});
+</script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="pad">
+                <div class="flex">
+                    <div class="logo">
+                        <h1><span>ER</span>PANKAJ</h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">about</a></li>
+                            <li class="show-menu"><a href="#">page <span class="fas fa-caret-down" onchange="drop_d"></span></a>
+                            
+                                <ul class="drop" id="p1" >
+                                    <li><a href="">link1</a></li>
+                                    <li><a href="">link2</a></li>
+                                    <li><a href="">link3</a></li>
+                                </ul>
+                            
+                            </li>
+                            <li><a href="">block</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+
+<section>
+    <div class="container">
+                <div class="bxslider">
+                    <div class="img1">
+                        <img src="ph1.jpg" alt="">
+                        <h1>image 1</h1>
+                    </div>
+                    <div class="img2">
+                        <img src="ph2.webp" alt="">
+                        <h1>image 2</h1>
+                    </div>
+                    <div class="img3">
+                        <img src="ph3.webp" alt="">
+                        <h1>image 3</h1>
+                    </div>
+                    <div class="img4">
+                        <img src="ph4.webp" alt="">
+                        <h1>image 4</h1>
+        </div>
+    </div>
+</section>
